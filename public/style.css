@@ -39,7 +39,7 @@ input {
   margin-bottom: 10px;
   padding: 5px;
   width: 100%;
-  border: 1px solid #0A0A23;
+  border: 3px solid #0A0A23;
   border-radius: 3px;
   font-size: 16px;
 }
@@ -72,6 +72,6 @@ li {
   } 
 }
 
-.jarak-pinggirkiri{
+#jarak-pinggirkiri{
   margin-left: 5px;
 }
