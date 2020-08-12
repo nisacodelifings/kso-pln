@@ -60,7 +60,8 @@ button:active {
   box-shadow: none;
 }
 
-li {
+div {
+  border: 2px solid cyan;
   margin-bottom: 5px;
 }
 
