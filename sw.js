@@ -1,8 +1,10 @@
 var CACHE_NAME = 'version-1'; // bump this version when you make changes.
 // Put all your urls that you want to cache in this array
 var urlsToCache = [
-    'index.html',
-    'assets/logo-192.png'
+    '/views/index.html',
+  '/public/style.css',
+  'server.js',
+'https://res.cloudinary.com/codelifings/image/upload/v1597208457/megaphone_osynts.png.png'
 ];
 
 // Install the service worker and open the cache and add files mentioned in array to cache

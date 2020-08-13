@@ -4,8 +4,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="manifest" href="manifest.json">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1b1b32" />
     <meta name="description" content="PM Your Social Media / Ads For Free!" />
 
     <title>PM Your Social Media / Ads For Free!</title>
@@ -76,5 +78,26 @@
          Saweria.co 👍
       </button></a>
     </footer>
+    
+    
+    <script>
+    
+    // ServiceWorker Registration
+    if('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('../sw.js').then(function(registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                
+            }, function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+    
+    
+    </script>
+    
   </body>
 </html>
