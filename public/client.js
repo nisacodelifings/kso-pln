@@ -52,11 +52,11 @@ dreamsForm.onsubmit = event => {
   dreamInput.focus();
 };
 
-// clearButton.addEventListener('click', event => {
-//   fetch("/clearDreams", {})
-//     .then(res => res.json())
-//     .then(response => {
-//       console.log("cleared dreams");
-//     });
-//   dreamsList.innerHTML = "";
-// });
+clearButton.addEventListener('click', event => {
+  fetch("/clearDreams", {})
+    .then(res => res.json())
+    .then(response => {
+      console.log("cleared dreams");
+    });
+  dreamsList.innerHTML = "";
+});
